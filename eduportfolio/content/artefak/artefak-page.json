@@ -1,0 +1,54 @@
+{
+  "page": {
+    "title": "Artefak Pembelajaran — EduPortfolio",
+    "tag": "📚 Artefak Pembelajaran",
+    "heading_line1": "Kumpulan",
+    "heading_em": "Artefak",
+    "heading_line2": "Pembelajaran Saya",
+    "description": "Modul ajar, lembar kerja siswa, media pembelajaran, dan berbagai karya yang saya kembangkan untuk mendukung proses belajar mengajar yang bermakna.",
+    "stats": [
+      { "icon": "📄", "count": "12", "label": "Modul Ajar" },
+      { "icon": "🎨", "count": "8", "label": "Media Pembelajaran" },
+      { "icon": "📝", "count": "15", "label": "Lembar Kerja" },
+      { "icon": "📁", "count": "35", "label": "Total Artefak" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "modul",
+      "icon": "📖",
+      "heading_line1": "Modul",
+      "heading_em": "Ajar",
+      "description": "Rancangan pembelajaran berbasis Kurikulum Merdeka"
+    },
+    {
+      "id": "media",
+      "icon": "🎨",
+      "heading_line1": "Media",
+      "heading_em": "Pembelajaran",
+      "description": "Poster, infografis, dan bahan ajar visual"
+    },
+    {
+      "id": "lks",
+      "icon": "📝",
+      "heading_line1": "Lembar Kerja",
+      "heading_em": "Siswa",
+      "description": "LKS diferensiasi dan berbasis proyek"
+    },
+    {
+      "id": "lainnya",
+      "icon": "🗃️",
+      "heading_line1": "Artefak",
+      "heading_em": "Lainnya",
+      "description": "Presentasi, rubrik, dan dokumen pendukung lainnya"
+    }
+  ],
+  "filter_buttons": [
+    { "label": "Semua", "value": "semua" },
+    { "label": "Modul Ajar", "value": "modul" },
+    { "label": "Media Pembelajaran", "value": "media" },
+    { "label": "Lembar Kerja Siswa", "value": "lks" },
+    { "label": "Presentasi", "value": "presentasi" },
+    { "label": "Lainnya", "value": "lainnya" }
+  ]
+}

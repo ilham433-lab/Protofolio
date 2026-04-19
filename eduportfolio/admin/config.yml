@@ -1,0 +1,503 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+locale: "id"
+
+collections:
+
+  # ════════════════════════════════════════════════════════════
+  # HALAMAN UTAMA — index.html
+  # ════════════════════════════════════════════════════════════
+  - name: "home"
+    label: "🏠 Halaman Utama"
+    files:
+
+      - name: "home_content"
+        label: "Hero, Tentang Saya & Kontak"
+        file: "content/pages/home.json"
+        fields:
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Teks", name: "badge", widget: "string" }
+              - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+              - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+              - { label: "Judul — Baris 2", name: "heading_line2", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - { label: "Teks Tombol Utama", name: "cta_primary_text", widget: "string" }
+              - { label: "Link Tombol Utama", name: "cta_primary_href", widget: "string" }
+              - { label: "Teks Tombol Outline", name: "cta_secondary_text", widget: "string" }
+              - { label: "Link Tombol Outline", name: "cta_secondary_href", widget: "string" }
+              - label: "Kartu Profil"
+                name: "card"
+                widget: "object"
+                fields:
+                  - { label: "Emoji Avatar", name: "avatar_emoji", widget: "string" }
+                  - { label: "Nama", name: "name", widget: "string" }
+                  - { label: "Peran / Jabatan", name: "role", widget: "string" }
+              - label: "Statistik (maks. 3)"
+                name: "stats"
+                widget: "list"
+                max: 3
+                fields:
+                  - { label: "Angka / Nilai", name: "num", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+
+          - label: "Tentang Saya"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Section Tag", name: "section_tag", widget: "string" }
+              - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+              - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+              - { label: "Emoji Avatar", name: "avatar_emoji", widget: "string" }
+              - label: "Tags Keahlian"
+                name: "tags"
+                widget: "list"
+                field: { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Nama Lengkap + Gelar", name: "name", widget: "string" }
+              - label: "Paragraf Bio"
+                name: "bio_paragraphs"
+                widget: "list"
+                field: { label: "Paragraf", name: "paragraf", widget: "text" }
+              - label: "Skill Bars"
+                name: "skills"
+                widget: "list"
+                fields:
+                  - { label: "Nama Skill", name: "label", widget: "string" }
+                  - { label: "Persentase (0–100)", name: "pct", widget: "number", value_type: "int", min: 0, max: 100 }
+
+          - label: "Kontak"
+            name: "kontak"
+            widget: "object"
+            fields:
+              - { label: "Section Tag", name: "section_tag", widget: "string" }
+              - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+              - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Lokasi", name: "location", widget: "string" }
+              - { label: "Keterangan Ketersediaan", name: "availability", widget: "string" }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Tahun Hak Cipta", name: "year", widget: "string" }
+              - { label: "Nama Pemilik", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+
+      - name: "portfolio"
+        label: "Portofolio & Galeri"
+        file: "content/pages/portfolio.json"
+        fields:
+          - { label: "Section Tag", name: "section_tag", widget: "string" }
+          - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+          - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+          - { label: "Deskripsi", name: "description", widget: "text" }
+          - label: "Kartu Portfolio"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Emoji Ikon", name: "icon", widget: "string" }
+              - { label: "Kategori", name: "category", widget: "string" }
+              - { label: "Judul", name: "title", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - { label: "Link (gunakan # jika belum ada)", name: "link", widget: "string" }
+
+      - name: "blog"
+        label: "Blog & Artikel"
+        file: "content/pages/blog.json"
+        fields:
+          - { label: "Section Tag", name: "section_tag", widget: "string" }
+          - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+          - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+          - { label: "Deskripsi", name: "description", widget: "text" }
+          - label: "Artikel"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Tanggal", name: "date", widget: "string" }
+              - { label: "Judul Artikel", name: "title", widget: "string" }
+              - { label: "Kutipan (Excerpt)", name: "excerpt", widget: "text" }
+              - { label: "Link Artikel", name: "link", widget: "string" }
+
+      - name: "artefak_preview"
+        label: "Artefak — Pratinjau di Beranda"
+        file: "content/pages/artefak-preview.json"
+        fields:
+          - { label: "Section Tag", name: "section_tag", widget: "string" }
+          - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+          - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+          - { label: "Deskripsi", name: "description", widget: "text" }
+          - label: "Kartu Artefak (maks. 6)"
+            name: "items"
+            widget: "list"
+            max: 6
+            fields:
+              - { label: "Emoji Ikon", name: "icon", widget: "string" }
+              - { label: "Judul", name: "title", widget: "string" }
+              - { label: "Deskripsi Singkat", name: "description", widget: "text" }
+              - { label: "Teks Tombol", name: "btn_text", widget: "string" }
+              - { label: "Link / URL", name: "link", widget: "string" }
+
+      - name: "penilaian_preview"
+        label: "Penilaian — Pratinjau di Beranda"
+        file: "content/pages/penilaian-preview.json"
+        fields:
+          - { label: "Section Tag", name: "section_tag", widget: "string" }
+          - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+          - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+          - { label: "Deskripsi", name: "description", widget: "text" }
+          - label: "Kartu Instrumen (maks. 6)"
+            name: "items"
+            widget: "list"
+            max: 6
+            fields:
+              - { label: "Label Badge", name: "label", widget: "string" }
+              - { label: "Judul Instrumen", name: "title", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - { label: "Teks Tombol Download", name: "download_text", widget: "string" }
+              - { label: "Link PDF", name: "link", widget: "string" }
+
+      - name: "jurnal_preview"
+        label: "Jurnal — Pratinjau di Beranda"
+        file: "content/pages/jurnal-preview.json"
+        fields:
+          - { label: "Section Tag", name: "section_tag", widget: "string" }
+          - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+          - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+          - { label: "Deskripsi", name: "description", widget: "text" }
+          - label: "Entri Jurnal"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Bulan (3 huruf — mis: Apr)", name: "month", widget: "string" }
+              - { label: "Tanggal", name: "day", widget: "string" }
+              - { label: "Judul Entri", name: "title", widget: "string" }
+              - { label: "Isi Singkat", name: "content", widget: "text" }
+              - { label: "Tag (mis: 💡 Insight)", name: "tag", widget: "string" }
+
+  # ════════════════════════════════════════════════════════════
+  # HALAMAN ARTEFAK — artefak/artefak.html
+  # ════════════════════════════════════════════════════════════
+  - name: "artefak"
+    label: "📚 Artefak Pembelajaran"
+    files:
+
+      - name: "artefak_page"
+        label: "Pengaturan Halaman Artefak"
+        file: "content/artefak/artefak-page.json"
+        fields:
+          - label: "Hero Halaman"
+            name: "page"
+            widget: "object"
+            fields:
+              - { label: "Judul Tab Browser", name: "title", widget: "string" }
+              - { label: "Tag Halaman", name: "tag", widget: "string" }
+              - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+              - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+              - { label: "Judul — Baris 2", name: "heading_line2", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - label: "Statistik Hero (4 chip)"
+                name: "stats"
+                widget: "list"
+                max: 4
+                fields:
+                  - { label: "Emoji Ikon", name: "icon", widget: "string" }
+                  - { label: "Jumlah", name: "count", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+
+          - label: "Seksi Konten"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "ID Seksi (untuk anchor & filter)", name: "id", widget: "string" }
+              - { label: "Emoji Ikon Seksi", name: "icon", widget: "string" }
+              - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+              - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+              - { label: "Deskripsi Seksi", name: "description", widget: "string" }
+
+          - label: "Tombol Filter"
+            name: "filter_buttons"
+            widget: "list"
+            fields:
+              - { label: "Label Tombol", name: "label", widget: "string" }
+              - { label: "Nilai Filter (cocok dengan data-cat kartu)", name: "value", widget: "string" }
+
+      - name: "artefak_items"
+        label: "Daftar Semua Artefak"
+        file: "content/artefak/artefak-items.json"
+        fields:
+          - label: "Kartu Artefak"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "ID Unik", name: "id", widget: "string", hint: "Contoh: modul-1, media-2" }
+              - label: "Kategori Filter"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Modul Ajar", value: "modul" }
+                  - { label: "Media Pembelajaran", value: "media" }
+                  - { label: "Lembar Kerja Siswa", value: "lks" }
+                  - { label: "Presentasi", value: "presentasi" }
+                  - { label: "Lainnya", value: "lainnya" }
+              - { label: "Emoji Ikon Kartu", name: "icon", widget: "string" }
+              - { label: "Label Kartu (mis: Modul Ajar)", name: "label", widget: "string" }
+              - { label: "Sub-label (mis: Kelas 5 · IPAS)", name: "sub", widget: "string" }
+              - label: "Tipe Badge"
+                name: "badge_type"
+                widget: "select"
+                options: ["modul", "media", "lks", "presentasi", "lainnya"]
+              - { label: "Teks Badge (mis: Modul, LKS, PPT)", name: "badge_text", widget: "string" }
+              - { label: "Judul Artefak", name: "title", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - { label: "Tanggal (mis: April 2025)", name: "date", widget: "string" }
+              - { label: "Format (mis: PDF · 25 hal.)", name: "format", widget: "string" }
+              - { label: "Emoji Format (mis: 📄 🖼 📝)", name: "format_icon", widget: "string" }
+              - { label: "Link Preview Google Drive (/preview)", name: "pdf_preview", widget: "string" }
+              - { label: "Link Unduh Google Drive (/uc?export=download)", name: "download_href", widget: "string" }
+
+  # ════════════════════════════════════════════════════════════
+  # HALAMAN DOKUMENTASI — Dokumentasi/dokumentasi.html
+  # ════════════════════════════════════════════════════════════
+  - name: "dokumentasi"
+    label: "📷 Dokumentasi Kegiatan"
+    files:
+
+      - name: "dokumentasi_page"
+        label: "Pengaturan Halaman Dokumentasi"
+        file: "content/dokumentasi/dokumentasi-page.json"
+        fields:
+          - label: "Hero Halaman"
+            name: "page"
+            widget: "object"
+            fields:
+              - { label: "Judul Tab Browser", name: "title", widget: "string" }
+              - { label: "Tag Halaman", name: "tag", widget: "string" }
+              - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+              - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+          - label: "Statistik (4 chip)"
+            name: "stats"
+            widget: "list"
+            max: 4
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Jumlah / Nilai", name: "count", widget: "string" }
+          - label: "Tombol Filter"
+            name: "filter_buttons"
+            widget: "list"
+            fields:
+              - { label: "Label Tombol", name: "label", widget: "string" }
+              - { label: "Nilai Filter", name: "value", widget: "string" }
+
+      - name: "foto_items"
+        label: "Foto Kegiatan"
+        file: "content/dokumentasi/foto-items.json"
+        fields:
+          - { label: "ID Seksi", name: "section_id", widget: "string" }
+          - { label: "Emoji Ikon Seksi", name: "section_icon", widget: "string" }
+          - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+          - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+          - { label: "Deskripsi Seksi", name: "description", widget: "string" }
+          - label: "Foto Kegiatan"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "ID Unik", name: "id", widget: "string" }
+              - { label: "Featured (tampilkan lebar penuh — 2 kolom)", name: "featured", widget: "boolean", default: false }
+              - label: "Kategori"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Kegiatan Kelas", value: "kelas" }
+                  - { label: "Pelatihan & Seminar", value: "pelatihan" }
+                  - { label: "Lomba & Prestasi", value: "lomba" }
+                  - { label: "Komunitas Guru", value: "komunitas" }
+              - { label: "Teks Badge", name: "badge", widget: "string", hint: "mis: 📸 Foto Unggulan" }
+              - { label: "URL Gambar", name: "image_src", widget: "image" }
+              - { label: "Alt Text Gambar", name: "image_alt", widget: "string" }
+              - { label: "Caption Lightbox", name: "lightbox_caption", widget: "string" }
+              - { label: "Kategori Dokumen (mis: Kegiatan Kelas · Proyek Sains)", name: "doc_category", widget: "string" }
+              - { label: "Judul Foto", name: "title", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - { label: "Tanggal", name: "date", widget: "string" }
+              - { label: "Link (# jika tidak ada)", name: "link", widget: "string" }
+              - { label: "Teks Link (mis: 🔗 Buka Foto)", name: "link_text", widget: "string" }
+
+      - name: "video_items"
+        label: "Video Kegiatan"
+        file: "content/dokumentasi/video-items.json"
+        fields:
+          - { label: "ID Seksi", name: "section_id", widget: "string" }
+          - { label: "Emoji Ikon Seksi", name: "section_icon", widget: "string" }
+          - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+          - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+          - { label: "Deskripsi Seksi", name: "description", widget: "string" }
+          - label: "Video"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "ID Unik", name: "id", widget: "string" }
+              - label: "Tipe Tampilan"
+                name: "type"
+                widget: "select"
+                options:
+                  - { label: "Thumbnail (klik buka YouTube — lebih cepat)", value: "thumbnail" }
+                  - { label: "Embed iframe (putar langsung di halaman)", value: "embed" }
+                hint: "Gunakan 'thumbnail' untuk performa lebih baik"
+              - { label: "YouTube Video ID (untuk tipe thumbnail)", name: "youtube_id", widget: "string", required: false, hint: "Contoh: 6MIvX8wVHgo — ambil dari URL youtube.com/watch?v=XXXX" }
+              - { label: "URL YouTube Lengkap (untuk thumbnail)", name: "youtube_url", widget: "string", required: false }
+              - { label: "Embed src (untuk tipe embed)", name: "embed_src", widget: "string", required: false, hint: "Format: https://www.youtube.com/embed/VIDEO_ID" }
+              - { label: "Link Tonton", name: "watch_href", widget: "string" }
+              - { label: "Kategori (mis: Video · YouTube)", name: "category", widget: "string" }
+              - { label: "Judul Video", name: "title", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - { label: "Tanggal", name: "date", widget: "string" }
+
+  # ════════════════════════════════════════════════════════════
+  # HALAMAN PENILAIAN — Penilaian/penilaian.html
+  # ════════════════════════════════════════════════════════════
+  - name: "penilaian"
+    label: "⭐ Penilaian & Jurnal"
+    files:
+
+      - name: "penilaian_page"
+        label: "Pengaturan Halaman Penilaian"
+        file: "content/penilaian/penilaian-page.json"
+        fields:
+          - label: "Hero Halaman"
+            name: "page"
+            widget: "object"
+            fields:
+              - { label: "Judul Tab Browser", name: "title", widget: "string" }
+              - { label: "Tag Halaman", name: "tag", widget: "string" }
+              - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+              - { label: "Judul — Baris 2 (sebelum em)", name: "heading_line2", widget: "string" }
+              - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - label: "Statistik Hero (4 chip)"
+                name: "stats"
+                widget: "list"
+                max: 4
+                fields:
+                  - { label: "Emoji Ikon", name: "icon", widget: "string" }
+                  - { label: "Nilai", name: "value", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+
+          - label: "Infografis Penilaian"
+            name: "infografis"
+            widget: "object"
+            fields:
+              - label: "Guru Pamong"
+                name: "guru_pamong"
+                widget: "object"
+                fields:
+                  - { label: "Emoji Avatar", name: "avatar", widget: "string" }
+                  - { label: "Label (mis: Dinilai oleh)", name: "label", widget: "string" }
+                  - { label: "Nama Guru Pamong", name: "name", widget: "string" }
+                  - { label: "Peran / Jabatan", name: "role", widget: "string" }
+                  - { label: "Sekolah", name: "school", widget: "string" }
+
+              - label: "Nilai Akhir"
+                name: "nilai_akhir"
+                widget: "object"
+                fields:
+                  - { label: "Skor Akhir (mis: 3.9)", name: "score", widget: "string" }
+                  - { label: "Nilai Maksimum (mis: 4)", name: "max", widget: "string" }
+                  - { label: "Predikat (mis: Sangat Baik ✨)", name: "predikat", widget: "string" }
+                  - { label: "Periode (mis: 📅 Semester Genap 2024/2025)", name: "period", widget: "string" }
+
+              - label: "Catatan Umum Guru Pamong"
+                name: "catatan_umum"
+                widget: "object"
+                fields:
+                  - { label: "Ikon", name: "icon", widget: "string" }
+                  - { label: "Judul Catatan", name: "title", widget: "string" }
+                  - { label: "Sub-judul (nama + periode)", name: "sub", widget: "string" }
+                  - { label: "Isi Catatan", name: "isi", widget: "text" }
+                  - { label: "Nama untuk TTD", name: "ttd_name", widget: "string" }
+                  - { label: "Tanggal TTD", name: "ttd_date", widget: "string" }
+
+      - name: "aspek_items"
+        label: "Aspek Penilaian Kinerja"
+        file: "content/penilaian/aspek-items.json"
+        fields:
+          - label: "Aspek Penilaian"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Emoji Ikon Aspek", name: "icon", widget: "string" }
+              - { label: "Nama Aspek", name: "label", widget: "string" }
+              - { label: "Skor (0.0 – 4.0)", name: "score", widget: "number", value_type: "float", min: 0, max: 4, step: 0.1 }
+              - { label: "Nilai Maksimum", name: "max", widget: "number", value_type: "float", default: 4.0 }
+              - { label: "Komentar Guru Pamong", name: "komentar", widget: "text" }
+
+      - name: "dokumen_items"
+        label: "Dokumen Penilaian (PDF)"
+        file: "content/penilaian/dokumen-items.json"
+        fields:
+          - { label: "Section Tag", name: "section_tag", widget: "string" }
+          - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+          - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+          - { label: "Deskripsi Seksi", name: "description", widget: "text" }
+          - label: "Dokumen PDF"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "ID Unik", name: "id", widget: "string" }
+              - { label: "Emoji Ikon", name: "icon", widget: "string" }
+              - { label: "Label (mis: Penilaian Kinerja)", name: "label", widget: "string" }
+              - { label: "Sub-label (Observasi · Periode)", name: "sub", widget: "string" }
+              - { label: "Judul Dokumen", name: "title", widget: "string" }
+              - { label: "Deskripsi Dokumen", name: "description", widget: "text" }
+              - { label: "Tanggal & Jumlah Halaman", name: "date", widget: "string", hint: "mis: Oktober 2024 · 8 hal." }
+              - { label: "Link Preview Google Drive (/preview)", name: "pdf_preview", widget: "string" }
+              - { label: "Link Unduh Google Drive (/uc?export=download)", name: "download_href", widget: "string" }
+
+      - name: "jurnal_items"
+        label: "Jurnal Refleksi Harian"
+        file: "content/jurnal/jurnal-items.json"
+        fields:
+          - { label: "Section Tag", name: "section_tag", widget: "string" }
+          - { label: "Judul — Baris 1", name: "heading_line1", widget: "string" }
+          - { label: "Judul — Teks Italic (em)", name: "heading_em", widget: "string" }
+          - { label: "Deskripsi Seksi", name: "description", widget: "text" }
+          - label: "Tombol Filter Jurnal"
+            name: "filter_buttons"
+            widget: "list"
+            fields:
+              - { label: "Label Tombol (mis: 💡 Insight)", name: "label", widget: "string" }
+              - { label: "Nilai Filter", name: "value", widget: "string" }
+          - label: "Entri Jurnal"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "ID Unik", name: "id", widget: "string", hint: "mis: jurnal-1" }
+              - label: "Tag Kategori"
+                name: "tag"
+                widget: "select"
+                options:
+                  - { label: "💡 Insight", value: "insight" }
+                  - { label: "📚 Strategi", value: "strategi" }
+                  - { label: "🔥 Tantangan", value: "tantangan" }
+                  - { label: "🌱 Pertumbuhan", value: "pertumbuhan" }
+                  - { label: "❤️ Apresiasi", value: "apresiasi" }
+              - { label: "Tag dengan Emoji (mis: 💡 insight)", name: "tag_display", widget: "string" }
+              - { label: "Bulan (3 huruf — mis: Apr)", name: "bulan", widget: "string" }
+              - { label: "Tanggal (mis: 10)", name: "tgl", widget: "string" }
+              - { label: "Judul Entri Jurnal", name: "title", widget: "string" }
+              - { label: "Isi Jurnal", name: "isi", widget: "text" }
+              - { label: "Takeaway / Pelajaran Hari Ini", name: "takeaway", widget: "text" }
+              - { label: "Mood (mis: 😊 Bahagia & Terinspirasi)", name: "mood", widget: "string" }
+              - { label: "Link Preview PDF Google Drive (/preview)", name: "pdf_preview", widget: "string" }
+              - { label: "Judul untuk Modal PDF", name: "pdf_title", widget: "string" }
+              - { label: "Link Unduh PDF Google Drive", name: "download_href", widget: "string" }

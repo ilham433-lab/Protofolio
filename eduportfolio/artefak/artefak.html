@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ============================================================
+       JUDUL TAB BROWSER
+       ✏ Ubah teks di bawah sesuai keinginan Anda
+  ============================================================ -->
+  <title>Artefak Pembelajaran — EduPortfolio</title>
+
+  <!-- Font — JANGAN DIUBAH -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- File CSS terpisah -->
+  <link rel="stylesheet" href="artefak.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════
+     NAVIGASI
+     ✏ Ubah href="index.html" jika nama file utama berbeda
+════════════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <!-- Logo kiri -->
+  <a href="../index.html" class="nav-logo">Edu<span>Portfolio</span></a>
+
+  <!-- Menu kanan -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Beranda</a></li>
+    <li><a href="#modul" class="active">Modul Ajar</a></li>
+    <li><a href="#media">Media</a></li>
+    <li><a href="#lks">LKS</a></li>
+    <li><a href="#lainnya">Lainnya</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Buka menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<!-- ════════════════════════════════════════════════════════
+     HERO / JUDUL HALAMAN
+     ✏ Ubah: label, judul, deskripsi
+════════════════════════════════════════════════════════ -->
+<header class="page-hero">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="page-hero-inner">
+    <!-- ✏ Label kategori -->
+    <div class="page-tag">📚 Artefak Pembelajaran</div>
+    <!-- ✏ Judul utama -->
+    <h1>Kumpulan <em>Artefak</em><br>Pembelajaran Saya</h1>
+    <!-- ✏ Deskripsi singkat -->
+    <p>Modul ajar, lembar kerja siswa, media pembelajaran, dan berbagai karya yang saya kembangkan untuk mendukung proses belajar mengajar yang bermakna.</p>
+
+    <!-- Statistik ringkas — ✏ Ubah angka sesuai data Anda -->
+    <div class="hero-stats-row">
+      <div class="hero-stat-chip">📄 <strong>12</strong> Modul Ajar</div>
+      <div class="hero-stat-chip">🎨 <strong>8</strong> Media Pembelajaran</div>
+      <div class="hero-stat-chip">📝 <strong>15</strong> Lembar Kerja</div>
+      <div class="hero-stat-chip">📁 <strong>35</strong> Total Artefak</div>
+    </div>
+  </div>
+</header>
+
+
+<!-- ════════════════════════════════════════════════════════
+     FILTER TOMBOL KATEGORI
+     ✏ Ubah/tambah tombol sesuai kategori artefak Anda
+     data-filter harus sama dengan data-cat di kartu artefak
+════════════════════════════════════════════════════════ -->
+<div class="filter-bar">
+  <span class="filter-label">Filter:</span>
+  <button class="filter-btn active" data-filter="semua">Semua</button>
+  <!-- ✏ Ubah teks dan data-filter sesuai kategori Anda -->
+  <button class="filter-btn" data-filter="modul">Modul Ajar</button>
+  <button class="filter-btn" data-filter="media">Media Pembelajaran</button>
+  <button class="filter-btn" data-filter="lks">Lembar Kerja Siswa</button>
+  <button class="filter-btn" data-filter="presentasi">Presentasi</button>
+  <button class="filter-btn" data-filter="lainnya">Lainnya</button>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     KONTEN UTAMA
+════════════════════════════════════════════════════════ -->
+<main id="main-content">
+
+  <!-- ══════════════════════════════════════════════════════
+       SEKSI 1 — MODUL AJAR
+       ✏ Ubah judul, ikon, deskripsi seksi
+  ══════════════════════════════════════════════════════ -->
+  <div id="modul" class="section-anchor"></div>
+  <div class="section-divider fade-up">
+    <div class="section-icon">📖</div>
+    <div class="section-divider-text">
+      <!-- ✏ Judul dan sub-judul seksi -->
+      <h2>Modul <em>Ajar</em></h2>
+      <p>Rancangan pembelajaran berbasis Kurikulum Merdeka</p>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="artefak-grid fade-up">
+
+    <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — MODUL 1
+         ✏ Yang perlu diubah:
+            - data-cat   : kategori filter (modul/media/lks/presentasi/lainnya)
+            - data-pdf   : link PDF Google Drive (format /preview)
+            - data-title : judul untuk modal preview
+            - Ikon emoji di .artefak-card-icon
+            - Teks label, judul, deskripsi, kelas, mapel, tanggal
+            - href tombol unduh (link Google Drive /view atau /uc?export=download)
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="modul"
+         data-pdf="https://drive.google.com/file/d/1Oblot9EZjrY6C2ZV6Ek2cI-lJ0Ye2XRt/preview"
+         data-title="IPAS — Kelas 5">
+
+      <div class="artefak-card-top">
+        <!-- ✏ Ubah emoji sesuai isi artefak -->
+        <div class="artefak-card-icon">📜</div>
+        <div class="artefak-card-meta">
+          <!-- ✏ Ubah label kategori -->
+          <span class="card-label">Modul Ajar</span>
+          <!-- ✏ Ubah kelas dan mapel -->
+          <span class="card-sub">Kelas 5 · IPAS</span>
+        </div>
+        <!-- Badge warna otomatis berdasarkan kategori -->
+        <div class="card-type-badge badge-modul">Modul</div>
+      </div>
+
+      <!-- ✏ Judul kartu -->
+      <h3 class="artefak-card-title">Modul Ajar — Pahlawan Pelawan Penjajah</h3>
+
+      <!-- ✏ Deskripsi singkat artefak -->
+      <p class="artefak-card-desc">
+        Modul ajar berbasis Kurikulum Merdeka untuk materi sejarah perlawanan Bangsa Indonesia terhadap penjajah. Dilengkapi dengan asesmen formatif dan sumatif.
+      </p>
+
+      <!-- Metadata bawah kartu -->
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <!-- ✏ Ubah tanggal -->
+          <span class="card-date">📅 2 April 2026</span>
+          <!-- ✏ Ubah format file jika bukan PDF -->
+          <span class="card-format">📄 PDF · 25 hal.</span>
+        </div>
+        <div class="card-actions">
+          <!-- Tombol Preview PDF — otomatis pakai data-pdf di atas -->
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <!-- ✏ Ubah href dengan link unduhan Google Drive Anda -->
+          <!-- Format unduhan: https://drive.google.com/uc?export=download&id=ID_FILE_ANDA -->
+          <a href="https://drive.google.com/file/d/1Oblot9EZjrY6C2ZV6Ek2cI-lJ0Ye2XRt/view?usp=sharing"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — MODUL 2
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="modul"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_2/preview"
+         data-title="Modul Ajar IPA — Siklus Makhluk Hidup">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">🌱</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">Modul Ajar</span>
+          <span class="card-sub">Kelas 5 · IPA</span>
+        </div>
+        <div class="card-type-badge badge-modul">Modul</div>
+      </div>
+      <h3 class="artefak-card-title">Modul Ajar IPA — Siklus Hidup Makhluk Hidup</h3>
+      <p class="artefak-card-desc">
+        Eksplorasi siklus hidup berbagai makhluk hidup melalui pendekatan saintifik dan observasi langsung. Dilengkapi lembar pengamatan dan rubrik penilaian.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 Februari 2025</span>
+          <span class="card-format">📄 PDF · 18 hal.</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_2"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — MODUL 3
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="modul"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_3/preview"
+         data-title="Modul Ajar IPS — Keberagaman Budaya">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">🗺️</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">Modul Ajar</span>
+          <span class="card-sub">Kelas 4 · IPS</span>
+        </div>
+        <div class="card-type-badge badge-modul">Modul</div>
+      </div>
+      <h3 class="artefak-card-title">Modul Ajar IPS — Keberagaman Budaya Indonesia</h3>
+      <p class="artefak-card-desc">
+        Menjelajahi kekayaan budaya Indonesia melalui proyek peta budaya. Siswa membuat mini-buku budaya daerahnya masing-masing sebagai produk akhir.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 Maret 2025</span>
+          <span class="card-format">📄 PDF · 20 hal.</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_3"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+    
+     <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — MODUL 4
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="modul"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_3/preview"
+         data-title="Modul Ajar IPS — Keberagaman Budaya">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">📜</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">Modul Ajar</span>
+          <span class="card-sub">Kelas 4 · IPS</span>
+        </div>
+        <div class="card-type-badge badge-modul">Modul</div>
+      </div>
+      <h3 class="artefak-card-title">Modul Ajar IPS — Keberagaman Budaya Indonesia</h3>
+      <p class="artefak-card-desc">
+        Menjelajahi kekayaan budaya Indonesia melalui proyek peta budaya. Siswa membuat mini-buku budaya daerahnya masing-masing sebagai produk akhir.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 Maret 2025</span>
+          <span class="card-format">📄 PDF · 20 hal.</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_3"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- /artefak-grid modul -->
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SEKSI 2 — MEDIA PEMBELAJARAN
+       ✏ Ubah judul, ikon, deskripsi seksi
+  ══════════════════════════════════════════════════════ -->
+  <div id="media" class="section-anchor"></div>
+  <div class="section-divider fade-up">
+    <div class="section-icon">🎨</div>
+    <div class="section-divider-text">
+      <h2>Media <em>Pembelajaran</em></h2>
+      <p>Poster, infografis, dan bahan ajar visual</p>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="artefak-grid fade-up">
+
+    <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — MEDIA 1
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="media"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_4/preview"
+         data-title="Poster Siklus Air — Media Visual Kelas">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">🌊</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">Media Visual</span>
+          <span class="card-sub">Kelas 5 · IPA</span>
+        </div>
+        <div class="card-type-badge badge-media">Media</div>
+      </div>
+      <h3 class="artefak-card-title">Poster Siklus Air — Media Visual Dinding Kelas</h3>
+      <p class="artefak-card-desc">
+        Poster berwarna A3 yang menggambarkan proses siklus air secara lengkap dan menarik. Dirancang agar mudah dipahami siswa SD kelas 5.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 Maret 2025</span>
+          <span class="card-format">🖼 PDF · A3 · 1 hal.</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_4"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — MEDIA 2
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="media"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_5/preview"
+         data-title="Infografis Tabel Perkalian Interaktif">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">📊</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">Infografis</span>
+          <span class="card-sub">Kelas 3–4 · Matematika</span>
+        </div>
+        <div class="card-type-badge badge-media">Media</div>
+      </div>
+      <h3 class="artefak-card-title">Infografis Tabel Perkalian — Visual Menarik & Berwarna</h3>
+      <p class="artefak-card-desc">
+        Infografis tabel perkalian 1–10 dengan ilustrasi warna-warni yang membantu siswa menghapal dengan menyenangkan. Siap cetak ukuran A4.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 Februari 2025</span>
+          <span class="card-format">🖼 PDF · A4 · 2 hal.</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_5"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — MEDIA 3
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="media"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_6/preview"
+         data-title="Flashcard Kosakata Bahasa Indonesia">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">🃏</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">Flashcard</span>
+          <span class="card-sub">Kelas 1–3 · Bahasa Indonesia</span>
+        </div>
+        <div class="card-type-badge badge-media">Media</div>
+      </div>
+      <h3 class="artefak-card-title">Flashcard Kosakata — 40 Kata Dasar Bahasa Indonesia</h3>
+      <p class="artefak-card-desc">
+        Set 40 kartu kosakata bergambar untuk memperkaya perbendaharaan kata siswa kelas rendah. Bisa dicetak, digunting, dan langsung digunakan.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 Januari 2025</span>
+          <span class="card-format">🃏 PDF · 10 hal.</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_6"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+<!-- ══════════════════════════════════════
+         KARTU ARTEFAK — MEDIA 1
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="media"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_4/preview"
+         data-title="Poster Siklus Air — Media Visual Kelas">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">🌊</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">Media Visual</span>
+          <span class="card-sub">Kelas 5 · IPA</span>
+        </div>
+        <div class="card-type-badge badge-media">Media</div>
+      </div>
+      <h3 class="artefak-card-title">Poster Siklus Air — Media Visual Dinding Kelas</h3>
+      <p class="artefak-card-desc">
+        Poster berwarna A3 yang menggambarkan proses siklus air secara lengkap dan menarik. Dirancang agar mudah dipahami siswa SD kelas 5.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 Maret 2025</span>
+          <span class="card-format">🖼 PDF · A3 · 1 hal.</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_4"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /artefak-grid media -->
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SEKSI 3 — LEMBAR KERJA SISWA (LKS)
+       ✏ Ubah judul, ikon, deskripsi seksi
+  ══════════════════════════════════════════════════════ -->
+  <div id="lks" class="section-anchor"></div>
+  <div class="section-divider fade-up">
+    <div class="section-icon">📝</div>
+    <div class="section-divider-text">
+      <h2>Lembar Kerja <em>Siswa</em></h2>
+      <p>LKS diferensiasi dan berbasis proyek</p>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="artefak-grid fade-up">
+
+    <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — LKS 1
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="lks"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_7/preview"
+         data-title="LKS Matematika — Operasi Bilangan Bulat">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">🔢</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">LKS</span>
+          <span class="card-sub">Kelas 5 · Matematika</span>
+        </div>
+        <div class="card-type-badge badge-lks">LKS</div>
+      </div>
+      <h3 class="artefak-card-title">LKS Diferensiasi — Operasi Bilangan Bulat</h3>
+      <p class="artefak-card-desc">
+        Lembar kerja dengan tiga tingkat kesulitan (mudah, sedang, menantang) untuk mengakomodasi keberagaman kemampuan siswa dalam satu kelas.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 April 2025</span>
+          <span class="card-format">📝 PDF · 6 hal.</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_7"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — LKS 2
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="lks"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_8/preview"
+         data-title="LKS Proyek Peta Konsep IPS">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">🗂️</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">LKS Proyek</span>
+          <span class="card-sub">Kelas 4 · IPS</span>
+        </div>
+        <div class="card-type-badge badge-lks">LKS</div>
+      </div>
+      <h3 class="artefak-card-title">LKS Proyek — Peta Konsep Lingkungan Sekitar</h3>
+      <p class="artefak-card-desc">
+        Panduan membuat peta konsep tentang lingkungan sekitar rumah dan sekolah. Mengintegrasikan literasi, numerasi, dan seni dalam satu aktivitas.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 Maret 2025</span>
+          <span class="card-format">📝 PDF · 4 hal.</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_8"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — LKS 3
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="lks"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_9/preview"
+         data-title="LKS Menulis Kreatif — Bahasa Indonesia">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">✍️</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">LKS Menulis</span>
+          <span class="card-sub">Kelas 3–5 · Bahasa Indonesia</span>
+        </div>
+        <div class="card-type-badge badge-lks">LKS</div>
+      </div>
+      <h3 class="artefak-card-title">LKS Menulis Kreatif — Cerita Bergambar Saya</h3>
+      <p class="artefak-card-desc">
+        Panduan menulis cerita bergambar sederhana dengan struktur awal-tengah-akhir. Siswa menggambar dan menulis sekaligus dalam satu kegiatan menyenangkan.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 Februari 2025</span>
+          <span class="card-format">📝 PDF · 5 hal.</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_9"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /artefak-grid lks -->
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SEKSI 4 — LAINNYA (Presentasi, Kuis, dll)
+       ✏ Ubah judul, ikon, deskripsi seksi
+  ══════════════════════════════════════════════════════ -->
+  <div id="lainnya" class="section-anchor"></div>
+  <div class="section-divider fade-up">
+    <div class="section-icon">🗃️</div>
+    <div class="section-divider-text">
+      <h2>Artefak <em>Lainnya</em></h2>
+      <p>Presentasi, rubrik, dan dokumen pendukung lainnya</p>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="artefak-grid fade-up">
+
+    <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — LAINNYA 1
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="presentasi"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_10/preview"
+         data-title="Presentasi PPT — Pengenalan Kurikulum Merdeka">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">🖥️</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">Presentasi</span>
+          <span class="card-sub">Guru · Pelatihan</span>
+        </div>
+        <div class="card-type-badge badge-presentasi">PPT</div>
+      </div>
+      <h3 class="artefak-card-title">Presentasi — Implementasi Kurikulum Merdeka di Kelas</h3>
+      <p class="artefak-card-desc">
+        Slide presentasi yang saya gunakan dalam kegiatan berbagi praktik baik di komunitas guru. Berisi langkah implementasi dan contoh nyata dari kelas.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 April 2025</span>
+          <span class="card-format">📊 PDF · 30 slide</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_10"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════
+         KARTU ARTEFAK — LAINNYA 2
+         ✏ Ganti semua data sesuai artefak Anda
+    ══════════════════════════════════════ -->
+    <div class="artefak-card fade-up"
+         data-cat="lainnya"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_FILE_11/preview"
+         data-title="Rubrik Penilaian Presentasi Siswa">
+
+      <div class="artefak-card-top">
+        <div class="artefak-card-icon">📋</div>
+        <div class="artefak-card-meta">
+          <span class="card-label">Rubrik</span>
+          <span class="card-sub">Semua Kelas · Penilaian</span>
+        </div>
+        <div class="card-type-badge badge-lainnya">Rubrik</div>
+      </div>
+      <h3 class="artefak-card-title">Rubrik Penilaian — Presentasi Lisan Siswa</h3>
+      <p class="artefak-card-desc">
+        Rubrik holistik dan analitik untuk menilai kemampuan presentasi lisan siswa. Mencakup aspek konten, penyampaian, bahasa, dan kepercayaan diri.
+      </p>
+      <div class="artefak-card-footer">
+        <div class="card-info-row">
+          <span class="card-date">📅 Januari 2025</span>
+          <span class="card-format">📄 PDF · 3 hal.</span>
+        </div>
+        <div class="card-actions">
+          <button class="btn-preview" onclick="openPreview(this.closest('.artefak-card'))">
+            👁 Preview
+          </button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_FILE_11"
+             target="_blank" class="btn-download">
+            ⬇ Unduh PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /artefak-grid lainnya -->
+
+
+  <!-- ════════════════════════════════════════════
+       TOMBOL KEMBALI KE HALAMAN UTAMA
+       ✏ Ubah href jika nama file utama berbeda
+  ════════════════════════════════════════════ -->
+  <div class="back-section fade-up">
+    <a href="../index.html" class="btn-back-home">← Kembali ke Halaman Utama</a>
+    <p>Ingin melihat portofolio, jurnal, atau dokumentasi kegiatan? Kunjungi halaman utama.</p>
+  </div>
+
+</main><!-- /main-content -->
+
+
+<!-- ════════════════════════════════════════════════════════
+     MODAL PREVIEW PDF
+     (Muncul saat tombol "Preview" diklik — jangan diubah)
+════════════════════════════════════════════════════════ -->
+<div id="pdf-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+
+    <!-- Header modal -->
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <span class="modal-icon">📄</span>
+        <div>
+          <h4 id="modal-title">Preview Dokumen</h4>
+          <p id="modal-subtitle">Google Drive · PDF</p>
+        </div>
+      </div>
+      <div class="modal-header-right">
+        <!-- Tombol unduh di dalam modal — href diisi otomatis oleh JS -->
+        <a id="modal-download-btn" href="#" target="_blank" class="btn-download modal-dl-btn">
+          ⬇ Unduh PDF
+        </a>
+        <!-- Tombol tutup modal -->
+        <button class="modal-close" id="modal-close-btn" aria-label="Tutup preview">✕</button>
+      </div>
+    </div>
+
+    <!-- Area iframe PDF -->
+    <div class="modal-body">
+      <iframe id="pdf-iframe" src="" title="Preview PDF" allowfullscreen></iframe>
+      <!-- Pesan loading saat PDF belum muncul -->
+      <div class="modal-loading" id="modal-loading">
+        <div class="loading-spinner"></div>
+        <p>Memuat dokumen…</p>
+        <small>Pastikan file Google Drive sudah disetel "Siapa saja dengan link"</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+     ✏ Ubah nama dan tahun
+════════════════════════════════════════════════════════ -->
+<footer>
+  <!-- ✏ Ubah nama dan tahun -->
+  <p>© 2026 <strong>Ilham Rasyid</strong> — Artefak Pembelajaran</p>
+  <div class="footer-links">
+    <a href="../index.html">← Halaman Utama</a>
+  </div>
+</footer>
+
+
+<!-- File JS terpisah -->
+<script src="../js/artefak.js"></script>
+
+</body>
+</html>

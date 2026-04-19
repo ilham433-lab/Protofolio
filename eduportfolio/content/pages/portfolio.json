@@ -1,0 +1,50 @@
+{
+  "section_tag": "Portofolio & Galeri",
+  "heading_line1": "Karya &",
+  "heading_em": "Kegiatan",
+  "description": "Dokumentasi kegiatan mengajar, proyek kreatif, dan inovasi pembelajaran",
+  "items": [
+    {
+      "icon": "🎨",
+      "category": "Media Pembelajaran",
+      "title": "Infografis Interaktif Matematika",
+      "description": "Media visual untuk memudahkan pemahaman konsep bilangan bagi siswa SD kelas 4.",
+      "link": "#"
+    },
+    {
+      "icon": "🎬",
+      "category": "Video Pembelajaran",
+      "title": "Video Animasi IPA — Siklus Air",
+      "description": "Video pembelajaran animasi yang menarik untuk menjelaskan proses siklus air.",
+      "link": "Dokumentasi/dokumentasi.html#video-kegiatan"
+    },
+    {
+      "icon": "📸",
+      "category": "Dokumentasi Kegiatan",
+      "title": "Proyek Sains Siswa Kelas 5",
+      "description": "Dokumentasi kegiatan project-based learning bertema lingkungan hidup.",
+      "link": "Dokumentasi/dokumentasi.html"
+    },
+    {
+      "icon": "🏆",
+      "category": "Prestasi",
+      "title": "Guru Inovatif Tingkat Kota",
+      "description": "Penghargaan atas inovasi media pembelajaran berbasis teknologi tahun 2024.",
+      "link": "#"
+    },
+    {
+      "icon": "📚",
+      "category": "Pelatihan",
+      "title": "Workshop Kurikulum Merdeka",
+      "description": "Partisipasi aktif dalam pelatihan implementasi Kurikulum Merdeka tingkat nasional.",
+      "link": "#"
+    },
+    {
+      "icon": "🌐",
+      "category": "Kolaborasi",
+      "title": "Program Pertukaran Guru",
+      "description": "Kolaborasi dengan guru dari berbagai daerah dalam program berbagi praktik baik.",
+      "link": "#"
+    }
+  ]
+}

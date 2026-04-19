@@ -1,0 +1,100 @@
+{
+  "section_tag": "Jurnal Refleksi Harian",
+  "heading_line1": "Jurnal",
+  "heading_em": "Refleksi Harian",
+  "description": "Catatan perjalanan dan pelajaran dari pengalaman mengajar saya",
+  "filter_buttons": [
+    { "label": "Semua", "value": "semua" },
+    { "label": "💡 Insight", "value": "insight" },
+    { "label": "📚 Strategi", "value": "strategi" },
+    { "label": "🔥 Tantangan", "value": "tantangan" },
+    { "label": "🌱 Pertumbuhan", "value": "pertumbuhan" },
+    { "label": "❤️ Apresiasi", "value": "apresiasi" }
+  ],
+  "items": [
+    {
+      "id": "jurnal-1",
+      "tag": "insight",
+      "tag_display": "💡 insight",
+      "bulan": "Apr",
+      "tgl": "10",
+      "title": "Ketika Siswa Mengajarkan Hal Baru kepada Saya",
+      "isi": "Hari ini seorang siswa menunjukkan cara menyelesaikan soal pembagian yang tidak pernah saya pikirkan sebelumnya — menggunakan pola warna. Saya terpaku sejenak, lalu tersenyum.",
+      "takeaway": "Kreativitas siswa tidak terbatas — tugas guru adalah memberi ruang untuk itu berkembang.",
+      "mood": "😊 Bahagia & Terinspirasi",
+      "pdf_preview": "https://drive.google.com/file/d/GANTI_ID_JURNAL_1/preview",
+      "pdf_title": "Jurnal Refleksi — 10 Apr",
+      "download_href": "https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_1"
+    },
+    {
+      "id": "jurnal-2",
+      "tag": "strategi",
+      "tag_display": "📚 strategi",
+      "bulan": "Apr",
+      "tgl": "03",
+      "title": "Diferensiasi Berhasil — Semua Siswa Tuntas Hari Ini",
+      "isi": "Hari ini saya mencoba menerapkan diferensiasi produk — siswa boleh menunjukkan pemahaman mereka melalui tulisan, gambar, atau presentasi lisan.",
+      "takeaway": "Beri pilihan, bukan perintah seragam. Setiap anak punya cara terbaik untuk menunjukkan apa yang mereka tahu.",
+      "mood": "🎉 Bangga & Bersyukur",
+      "pdf_preview": "https://drive.google.com/file/d/GANTI_ID_JURNAL_2/preview",
+      "pdf_title": "Jurnal Refleksi — 03 Apr",
+      "download_href": "https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_2"
+    },
+    {
+      "id": "jurnal-3",
+      "tag": "tantangan",
+      "tag_display": "🔥 tantangan",
+      "bulan": "Mar",
+      "tgl": "22",
+      "title": "Kelas Gaduh, Saya Hampir Menyerah — Tapi Tidak",
+      "isi": "Jujur saja, hari ini berat. Kelas sangat tidak kondusif. Beberapa siswa terus berbicara, sebagian terlihat mengantuk.",
+      "takeaway": "Hari yang berat bukan tanda kegagalan. Itu undangan untuk tumbuh lebih kuat dan lebih bijak.",
+      "mood": "😤 Lelah tapi Bertekad",
+      "pdf_preview": "https://drive.google.com/file/d/GANTI_ID_JURNAL_3/preview",
+      "pdf_title": "Jurnal Refleksi — 22 Mar",
+      "download_href": "https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_3"
+    },
+    {
+      "id": "jurnal-4",
+      "tag": "pertumbuhan",
+      "tag_display": "🌱 pertumbuhan",
+      "bulan": "Mar",
+      "tgl": "10",
+      "title": "Feedback Guru Pamong yang Mengubah Cara Pandang Saya",
+      "isi": "Setelah sesi observasi hari ini, Guru Pamong menyampaikan sesuatu yang mengena: \"Kamu mengajar terlalu banyak — biarkan siswa yang lebih banyak bekerja.\"",
+      "takeaway": "Guru yang baik bukan yang paling banyak bicara, tapi yang paling banyak memberi ruang bagi siswa untuk berpikir.",
+      "mood": "🤔 Reflektif & Berkembang",
+      "pdf_preview": "https://drive.google.com/file/d/GANTI_ID_JURNAL_4/preview",
+      "pdf_title": "Jurnal Refleksi — 10 Mar",
+      "download_href": "https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_4"
+    },
+    {
+      "id": "jurnal-5",
+      "tag": "apresiasi",
+      "tag_display": "❤️ apresiasi",
+      "bulan": "Feb",
+      "tgl": "14",
+      "title": "Sepucuk Surat dari Siswa yang Membuat Saya Menangis Haru",
+      "isi": "Di akhir kelas hari ini, seorang siswa diam-diam menyelipkan selembar kertas di meja saya.",
+      "takeaway": "Dampak seorang guru tidak selalu terlihat hari ini — tapi ia tertanam jauh di dalam diri setiap siswa yang pernah kita ajar.",
+      "mood": "❤️ Terharu & Penuh Syukur",
+      "pdf_preview": "https://drive.google.com/file/d/GANTI_ID_JURNAL_5/preview",
+      "pdf_title": "Jurnal Refleksi — 14 Feb",
+      "download_href": "https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_5"
+    },
+    {
+      "id": "jurnal-6",
+      "tag": "pertumbuhan",
+      "tag_display": "🌱 pertumbuhan",
+      "bulan": "Jan",
+      "tgl": "28",
+      "title": "Pertama Kali Mencoba Project-Based Learning — Hasilnya Luar Biasa",
+      "isi": "Ini pertama kalinya saya mencoba PBL secara penuh selama tiga minggu. Saya ragu di awal — apakah siswa SD bisa mengelola proyek sendiri?",
+      "takeaway": "Siswa seringkali lebih siap dari yang kita kira. Yang mereka butuhkan adalah kepercayaan dan bimbingan yang tepat.",
+      "mood": "🚀 Bersemangat & Percaya Diri",
+      "pdf_preview": "https://drive.google.com/file/d/GANTI_ID_JURNAL_6/preview",
+      "pdf_title": "Jurnal Refleksi — 28 Jan",
+      "download_href": "https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_6"
+    }
+  ]
+}

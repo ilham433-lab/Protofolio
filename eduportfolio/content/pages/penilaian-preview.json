@@ -1,0 +1,50 @@
+{
+  "section_tag": "Lampiran Penilaian",
+  "heading_line1": "Instrumen",
+  "heading_em": "Penilaian",
+  "description": "Kumpulan rubrik, asesmen, dan instrumen evaluasi pembelajaran",
+  "items": [
+    {
+      "label": "Asesmen Formatif",
+      "title": "Rubrik Penilaian Proyek",
+      "description": "Rubrik holistik dan analitik untuk menilai proyek siswa secara adil dan objektif.",
+      "download_text": "⬇ Unduh PDF",
+      "link": "#"
+    },
+    {
+      "label": "Asesmen Sumatif",
+      "title": "Soal Evaluasi Akhir Semester",
+      "description": "Kumpulan soal HOTS berbasis konteks untuk evaluasi akhir semester.",
+      "download_text": "⬇ Unduh PDF",
+      "link": "#"
+    },
+    {
+      "label": "Observasi",
+      "title": "Lembar Observasi Sikap",
+      "description": "Instrumen penilaian sikap dan perilaku siswa dalam proses pembelajaran.",
+      "download_text": "⬇ Unduh PDF",
+      "link": "#"
+    },
+    {
+      "label": "Portofolio Siswa",
+      "title": "Template Portofolio Siswa",
+      "description": "Format portofolio digital untuk mendokumentasikan perkembangan belajar siswa.",
+      "download_text": "⬇ Unduh PDF",
+      "link": "#"
+    },
+    {
+      "label": "Asesmen Diagnostik",
+      "title": "Asesmen Awal Semester",
+      "description": "Instrumen diagnostik untuk mengetahui kondisi awal dan kebutuhan belajar siswa.",
+      "download_text": "⬇ Unduh PDF",
+      "link": "#"
+    },
+    {
+      "label": "Rapor Naratif",
+      "title": "Template Rapor Deskriptif",
+      "description": "Format rapor naratif berbasis capaian kompetensi sesuai Kurikulum Merdeka.",
+      "download_text": "⬇ Unduh PDF",
+      "link": "#"
+    }
+  ]
+}
