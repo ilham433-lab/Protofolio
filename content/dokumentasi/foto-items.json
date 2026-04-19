@@ -1,0 +1,39 @@
+{
+  "section_id": "foto-kegiatan",
+  "section_icon": "📸",
+  "heading_line1": "Foto",
+  "heading_em": "Kegiatan Kelas",
+  "description": "Dokumentasi proses belajar mengajar sehari-hari",
+  "items": [
+    {
+      "id": "foto-1",
+      "featured": true,
+      "category": "kelas",
+      "badge": "📸 Foto Unggulan",
+      "image_src": "https://raw.githubusercontent.com/Pedagogi-lab/Website-Portofolio/21b3763c04f1244549277043f6885774693afb05/Pahlawan%20Pelawan%20Penjajah.png",
+      "image_alt": "Pahlawan Pelawan Penjajah",
+      "lightbox_caption": "Pahlawan Pelawan Penjajah",
+      "doc_category": "Kegiatan Kelas · Proyek Sains",
+      "title": "Project Sains Kelas 5 — Percobaan Ekosistem Mini",
+      "description": "Siswa bekerja dalam kelompok untuk membuat ekosistem mini dalam toples. Kegiatan ini merupakan bagian dari pembelajaran berbasis proyek (PBL).",
+      "date": "15 Maret 2025",
+      "link": "#",
+      "link_text": "🔗 Buka Foto"
+    },
+    {
+      "id": "foto-2",
+      "featured": true,
+      "category": "kelas",
+      "badge": "📸 Foto Unggulan",
+      "image_src": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800",
+      "image_alt": "Kegiatan utama",
+      "lightbox_caption": "Project Sains Kelas 5 — Percobaan Ekosistem Mini",
+      "doc_category": "Kegiatan Kelas · Proyek Sains",
+      "title": "Project Sains Kelas 5 — Percobaan Ekosistem Mini",
+      "description": "Siswa bekerja dalam kelompok untuk membuat ekosistem mini dalam toples. Kegiatan ini merupakan bagian dari pembelajaran berbasis proyek (PBL).",
+      "date": "15 Maret 2025",
+      "link": "#",
+      "link_text": "🔗 Buka Foto"
+    }
+  ]
+}

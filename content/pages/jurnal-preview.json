@@ -1,0 +1,36 @@
+{
+  "section_tag": "Jurnal Refleksi",
+  "heading_line1": "Refleksi",
+  "heading_em": "Mengajar",
+  "description": "Catatan perjalanan dan pembelajaran dari pengalaman mengajar saya",
+  "items": [
+    {
+      "month": "Apr",
+      "day": "10",
+      "title": "Ketika Siswa Saya Mengajarkan Saya Hal Baru",
+      "content": "Hari ini di kelas, seorang siswa menunjukkan cara yang tidak pernah saya pikirkan sebelumnya untuk menyelesaikan soal. Momen ini mengingatkan saya bahwa belajar adalah proses dua arah yang indah.",
+      "tag": "💡 Insight"
+    },
+    {
+      "month": "Mar",
+      "day": "22",
+      "title": "Refleksi: Menerapkan Pembelajaran Berdiferensiasi",
+      "content": "Setelah tiga minggu menerapkan strategi diferensiasi, saya melihat perubahan signifikan pada keterlibatan siswa yang sebelumnya tampak pasif di kelas. Ini adalah bukti nyata bahwa setiap anak bisa belajar, dengan caranya sendiri.",
+      "tag": "📚 Strategi"
+    },
+    {
+      "month": "Mar",
+      "day": "22",
+      "title": "Pembelajaran Ke 3",
+      "content": "Setelah dua minggu menerapkan, saya melihat perubahan signifikan pada keterlibatan siswa yang sebelumnya tampak pasif di kelas. Ini adalah bukti nyata bahwa setiap anak bisa belajar, dengan caranya sendiri.",
+      "tag": "🌱 Cara"
+    },
+    {
+      "month": "Mar",
+      "day": "30",
+      "title": "Tantangan & Pelajaran dari Kelas yang Beragam",
+      "content": "Mengelola kelas dengan 30 siswa yang memiliki latar belakang dan gaya belajar berbeda adalah tantangan sekaligus privilese. Setiap hari saya belajar untuk lebih sabar, lebih kreatif, dan lebih penuh kasih.",
+      "tag": "🌱 Pertumbuhan"
+    }
+  ]
+}

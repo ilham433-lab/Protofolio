@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi Kegiatan — EduPortfolio</title>
+
+    <!-- Font & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Link CSS Eksternal -->
+    <link rel="stylesheet" href="dokumentasi.css">
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class="nav-logo">
+  <img src="https://raw.githubusercontent.com/Pedagogi-lab/Website-Portofolio/f679ea731d0a54c44d9b79c2637e31b68aa478c3/Logo%201.png" 
+       alt="Logo" 
+       style="height:40px; width:auto; vertical-align:middle;">
+</a>
+        <ul class="nav-links" id="navLinks">
+            <!-- Ubah Beranda/index.html -->
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="#foto-kegiatan" class="active">Foto Kegiatan</a></li>
+            <li><a href="#video-kegiatan">Video</a></li>
+            <li><a href="#dokumen">Dokumen</a></li>
+        </ul>
+        <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="page-hero">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="page-hero-inner" style="animation: fadeUp 0.7s ease both;">
+            <div class="page-tag">📷 Dokumentasi Kegiatan</div>
+            <h1>Galeri Kegiatan<br><em>Pembelajaran</em></h1>
+            <p>Kumpulan dokumentasi foto, video, dan dokumen dari berbagai kegiatan mengajar, pelatihan, serta inovasi pembelajaran yang telah saya lakukan.</p>
+        </div>
+    </div>
+
+    <div class="filter-bar">
+        <span class="filter-label">Filter:</span>
+        <button class="filter-btn active" onclick="setFilter(this,'semua')">Semua</button>
+        <button class="filter-btn" onclick="setFilter(this,'kelas')">Kegiatan Kelas</button>
+        <button class="filter-btn" onclick="setFilter(this,'pelatihan')">Pelatihan & Seminar</button>
+        <button class="filter-btn" onclick="setFilter(this,'lomba')">Lomba & Prestasi</button>
+        <button class="filter-btn" onclick="setFilter(this,'komunitas')">Komunitas Guru</button>
+    </div>
+
+    <main>
+        <div class="stats-row fade-up">
+            <div class="stat-chip"><div class="dot"></div> <strong>24</strong> Foto Dokumentasi</div>
+            <div class="stat-chip"><div class="dot"></div> <strong>6</strong> Video Kegiatan</div>
+            <div class="stat-chip"><div class="dot"></div> <strong>8</strong> Dokumen / PDF</div>
+            <div class="stat-chip"><div class="dot"></div> <strong>2026</strong> Periode</div>
+        </div>
+
+        <div id="foto-kegiatan" style="scroll-margin-top:80px;">
+            <div class="section-divider fade-up">
+                <div class="section-icon">📸</div>
+                <div class="section-divider-text">
+                    <h2>Foto <em>Kegiatan Kelas</em></h2>
+                    <p>Dokumentasi proses belajar mengajar sehari-hari</p>
+                </div>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="gallery-grid fade-up">
+                <!-- Kartu Featured -->
+                <div class="doc-card featured" onclick="openLightbox('https://raw.githubusercontent.com/Pedagogi-lab/Website-Portofolio/21b3763c04f1244549277043f6885774693afb05/Pahlawan%20Pelawan%20Penjajah.png', 'Pahlawan Pelawan Penjajah')">
+                    <div class="doc-thumb">
+                        <img src="https://raw.githubusercontent.com/Pedagogi-lab/Website-Portofolio/21b3763c04f1244549277043f6885774693afb05/Pahlawan%20Pelawan%20Penjajah.png" 
+                         alt="Kegiatan utama"
+                        style="width:100%; height:100%; object-fit:cover;">
+                        <div class="thumb-overlay"><div class="open-ico">🔍</div></div>
+                        <div class="doc-type-badge">📸 Foto Unggulan</div>
+                    </div>
+                    <div class="doc-info">
+                        <div class="doc-category">Kegiatan Kelas · Proyek Sains</div>
+                        <h3>Project Sains Kelas 5 — Percobaan Ekosistem Mini</h3>
+                        <p>Siswa bekerja dalam kelompok untuk membuat ekosistem mini dalam toples. Kegiatan ini merupakan bagian dari pembelajaran berbasis proyek (PBL).</p>
+                        <div class="doc-footer">
+                            <span class="doc-date">📅 15 Maret 2025</span>
+                            <a href="#" class="doc-link">🔗 Buka Foto</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Kartu Featured -->
+                <div class="doc-card featured" onclick="openLightbox('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200', 'Project Sains Kelas 5 — Percobaan Ekosistem Mini')">
+                    <div class="doc-thumb">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800" alt="Kegiatan utama">
+                        <div class="thumb-overlay"><div class="open-ico">🔍</div></div>
+                        <div class="doc-type-badge">📸 Foto Unggulan</div>
+                    </div>
+                    <div class="doc-info">
+                        <div class="doc-category">Kegiatan Kelas · Proyek Sains</div>
+                        <h3>Project Sains Kelas 5 — Percobaan Ekosistem Mini</h3>
+                        <p>Siswa bekerja dalam kelompok untuk membuat ekosistem mini dalam toples. Kegiatan ini merupakan bagian dari pembelajaran berbasis proyek (PBL).</p>
+                        <div class="doc-footer">
+                            <span class="doc-date">📅 15 Maret 2025</span>
+                            <a href="#" class="doc-link">🔗 Buka Foto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+                    <div id="video-kegiatan" style="scroll-margin-top:80px;">
+                        <!-- ✏ Ubah judul seksi -->
+                        <div class="section-divider fade-up">
+                        <div class="section-icon">🎬</div>
+                        <div class="section-divider-text">
+                            <h2>Video <em>Kegiatan</em></h2>
+                            <p>Rekaman pembelajaran dan kegiatan yang diunggah ke YouTube</p>
+                        </div>
+                        <div class="section-line"></div>
+                        </div>
+
+                        <div class="gallery-grid fade-up">
+
+                        <!-- ══════════════════════════════════════
+                            KARTU VIDEO YOUTUBE — No. 1
+                            ✏ Cara embed video YouTube:
+                            1. Buka video YouTube Anda
+                            2. Klik Share → Embed
+                            3. Salin link dari src="https://www.youtube.com/embed/XXXX"
+                            4. Ganti KODE_VIDEO_ANDA di bawah dengan kode tsb
+                            5. Atau gunakan link biasa di tombol "Tonton"
+                        ══════════════════════════════════════ -->
+                        <div class="doc-card" style="cursor:default;">
+                            <div class="doc-thumb" style="height:200px; padding:0; background:#000;">
+                            <!-- ✏ GANTI src berikut — ubah KODE_VIDEO_ANDA dengan ID video YouTube Anda -->
+                            <!-- Contoh: https://www.youtube.com/embed/dQw4w9WgXcQ -->
+                            <!-- Ganti frame Menjadi -->
+                                <div onclick="window.open('https://youtu.be/6MIvX8wVHgo', '_blank')" style="cursor:pointer; width:100%; height:100%;">
+                                    <img src="https://img.youtube.com/vi/6MIvX8wVHgo/hqdefault.jpg" 
+                                        style="width:100%; height:100%; object-fit:cover;"> </div>
+                                </div>
+                            <div class="doc-info">
+                            <!-- ✏ Ubah kategori, judul, deskripsi, tanggal, dan href -->
+                            <div class="doc-category">Video · YouTube</div>
+                            <h3>Pembelajaran Materi Pahlawan Pelawan Penjajah Kelas 5 SDIT LHI</h3>
+                            <p>Video panduan langkah demi langkah membuat media pembelajaran kreatif menggunakan bahan bekas yang mudah didapat.</p>
+                            <div class="doc-footer">
+                                <span class="doc-date">📅 02 April 2026</span>
+                                <!-- ✏ Ganti href dengan link YouTube Anda -->
+                                <a href="https://youtu.be/6MIvX8wVHgo?si=81tibuAsKtUKr7o_" target="_blank" class="doc-link">▶ Tonton</a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════════════════════════════
+                            KARTU VIDEO YOUTUBE — No. 2
+                            ✏ Ganti: src iframe, judul, deskripsi, tanggal, href
+                        ══════════════════════════════════════ -->
+                        <div class="doc-card" style="cursor:default;">
+                            <div class="doc-thumb" style="height:200px; padding:0; background:#000;">
+                            <!-- ✏ GANTI src berikut dengan link embed YouTube Anda -->
+                            <iframe
+                                style="width:100%;height:100%;border:none;"
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                title="Video kegiatan 2"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <div class="doc-info">
+                            <div class="doc-category">Video · Dokumentasi</div>
+                            <h3>Kegiatan Upacara Hari Pendidikan Nasional 2025</h3>
+                            <p>Dokumentasi peringatan Hardiknas bersama siswa dan rekan guru di sekolah. Penuh semangat dan makna.</p>
+                            <div class="doc-footer">
+                                <span class="doc-date">📅 2 Mei 2025</span>
+                                <a href="https://youtube.com" target="_blank" class="doc-link">▶ Tonton</a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════════════════════════════
+                            KARTU VIDEO YOUTUBE — No. 3
+                            ✏ Ganti: src iframe, judul, deskripsi, tanggal, href
+                        ══════════════════════════════════════ -->
+                        <div class="doc-card" style="cursor:default;">
+                            <div class="doc-thumb" style="height:200px; padding:0; background:#000;">
+                            <!-- ✏ GANTI src berikut dengan link embed YouTube Anda -->
+                            <iframe
+                                style="width:100%;height:100%;border:none;"
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                title="Video kegiatan 3"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <div class="doc-info">
+                            <div class="doc-category">Video · Pelatihan</div>
+                            <h3>Workshop Pembuatan Video Pembelajaran Interaktif</h3>
+                            <p>Rekaman sesi workshop bersama komunitas guru tentang cara membuat video pembelajaran yang menarik dan efektif.</p>
+                            <div class="doc-footer">
+                                <span class="doc-date">📅 8 April 2025</span>
+                                <a href="https://youtube.com" target="_blank" class="doc-link">▶ Tonton</a>
+                            </div>
+                            </div>
+                        </div>
+
+                        </div><!-- /gallery-grid seksi 2 -->
+                    </div><!-- /seksi 2 -->
+
+                     style="scroll-margin-top:80px;">
+                        <!-- duplicate section removed -->
+
+                        <div class="gallery-grid fade-up">
+
+                        <!-- ══════════════════════════════════════
+                            KARTU VIDEO YOUTUBE — No. 1
+                            ✏ Cara embed video YouTube:
+                            1. Buka video YouTube Anda
+                            2. Klik Share → Embed
+                            3. Salin link dari src="https://www.youtube.com/embed/XXXX"
+                            4. Ganti KODE_VIDEO_ANDA di bawah dengan kode tsb
+                            5. Atau gunakan link biasa di tombol "Tonton"
+                        ══════════════════════════════════════ -->
+                        <div class="doc-card" style="cursor:default;">
+                            <div class="doc-thumb" style="height:200px; padding:0; background:#000;">
+                            <!-- ✏ GANTI src berikut — ubah KODE_VIDEO_ANDA dengan ID video YouTube Anda -->
+                            <!-- Contoh: https://www.youtube.com/embed/dQw4w9WgXcQ -->
+                            
+                                <div onclick="window.open('https://youtu.be/6MIvX8wVHgo', '_blank')" style="cursor:pointer; width:100%; height:100%;">
+                                    <img src="https://img.youtube.com/vi/6MIvX8wVHgo/hqdefault.jpg" 
+                                        style="width:100%; height:100%; object-fit:cover;"> </div>
+                                </div>
+                            <div class="doc-info">
+                            <!-- ✏ Ubah kategori, judul, deskripsi, tanggal, dan href -->
+                            <div class="doc-category">Video · YouTube</div>
+                            <h3>Pembelajaran Materi Pahlawan Pelawan Penjajah Kelas 5 SDIT LHI</h3>
+                            <p>Video panduan langkah demi langkah membuat media pembelajaran kreatif menggunakan bahan bekas yang mudah didapat.</p>
+                            <div class="doc-footer">
+                                <span class="doc-date">📅 02 April 2026</span>
+                                <!-- ✏ Ganti href dengan link YouTube Anda -->
+                                <a href="https://youtu.be/6MIvX8wVHgo?si=81tibuAsKtUKr7o_" target="_blank" class="doc-link">▶ Tonton</a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════════════════════════════
+                            KARTU VIDEO YOUTUBE — No. 2
+                            ✏ Ganti: src iframe, judul, deskripsi, tanggal, href
+                        ══════════════════════════════════════ -->
+                        <div class="doc-card" style="cursor:default;">
+                            <div class="doc-thumb" style="height:200px; padding:0; background:#000;">
+                            <!-- ✏ GANTI src berikut dengan link embed YouTube Anda -->
+                            <iframe
+                                style="width:100%;height:100%;border:none;"
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                title="Video kegiatan 2"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <div class="doc-info">
+                            <div class="doc-category">Video · Dokumentasi</div>
+                            <h3>Kegiatan Upacara Hari Pendidikan Nasional 2025</h3>
+                            <p>Dokumentasi peringatan Hardiknas bersama siswa dan rekan guru di sekolah. Penuh semangat dan makna.</p>
+                            <div class="doc-footer">
+                                <span class="doc-date">📅 2 Mei 2025</span>
+                                <a href="https://youtube.com" target="_blank" class="doc-link">▶ Tonton</a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        </div><!-- /gallery-grid seksi 2 -->
+                    </div><!-- /seksi 2 -->
+                    
+
+
+        </div>
+        <div style="text-align:center; margin-top:56px; padding-top:40px; border-top:1px solid var(--blue-light);" class="fade-up">
+            <a href="../index.html" class="nav-back" style="font-size:1rem; padding:14px 32px;">Kembali ke Halaman Utama</a>
+        </div>
+        
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <button id="lightbox-close" onclick="closeLightbox()">✕</button>
+        <img id="lightbox-img" src="" alt="">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <p>© 2026 <strong>Ilham Rasyid</strong> — Dokumentasi Kegiatan Pembelajaran</p>
+    </footer>
+
+    <!-- Link JS Eksternal -->
+    <script src="../js/dokumentasi.js"></script>
+</body>
+</html>

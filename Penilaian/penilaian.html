@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Penilaian &amp; Jurnal Refleksi — EduPortfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="penilaian.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="../index.html" class="nav-logo">Edu<span>Portfolio</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Beranda</a></li>
+    <li><a href="#penilaian" class="active">Penilaian</a></li>
+    <li><a href="#infografis">Infografis</a></li>
+    <li><a href="#dokumen-nilai">Dokumen</a></li>
+    <li><a href="#jurnal">Jurnal Refleksi</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Buka menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<header class="page-hero">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="page-hero-inner">
+    <div class="page-tag">⭐ Penilaian &amp; Refleksi</div>
+    <h1>Penilaian Guru Pamong<br>&amp; <em>Jurnal Refleksi</em></h1>
+    <p>Dokumentasi hasil penilaian kinerja dari Guru Pamong serta catatan refleksi harian perjalanan mengajar saya yang bermakna.</p>
+    <div class="hero-stats-row">
+      <div class="hero-stat-chip">⭐ <strong>4.8</strong> Rata-rata Nilai</div>
+      <div class="hero-stat-chip">📋 <strong>3</strong> Periode Penilaian</div>
+      <div class="hero-stat-chip">📖 <strong>24</strong> Entri Jurnal</div>
+      <div class="hero-stat-chip">📅 <strong>2024–2025</strong> Periode</div>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <div id="penilaian" class="section-anchor"></div>
+  <div id="infografis" class="section-anchor" style="top:-20px;"></div>
+  <div class="section-divider fade-up">
+    <div class="section-icon">📊</div>
+    <div class="section-divider-text">
+      <h2>Infografis <em>Penilaian</em></h2>
+      <p>Hasil penilaian kinerja dari Guru Pamong secara visual</p>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="nilai-summary-card fade-up">
+    <div class="nilai-summary-left">
+      <div class="summary-avatar">👩‍🏫</div>
+      <div class="summary-info">
+        <div class="summary-label">Dinilai oleh</div>
+        <div class="summary-name">Mavitra Elanvihara, S.Si.</div>
+        <div class="summary-role">Guru Senior · Wali Kelas VI</div>
+        <div class="summary-school">📍 SDN Contoh 01 Yogyakarta</div>
+      </div>
+    </div>
+    <div class="nilai-summary-right">
+      <div class="final-score-ring">
+        <div class="score-ring-inner">
+          <div class="score-number">2</div>
+          <div class="score-max">dari 4</div>
+        </div>
+      </div>
+      <div class="final-score-label">Nilai Akhir</div>
+      <div class="final-score-predikat">Sangat Baik ✨</div>
+      <div class="final-score-period">📅 Semester Genap 2024/2025</div>
+    </div>
+  </div>
+
+  <div class="aspek-grid fade-up">
+    <div class="aspek-item">
+      <div class="aspek-header">
+        <div class="aspek-icon">📚</div>
+        <div class="aspek-info">
+          <div class="aspek-label">Penguasaan Materi</div>
+          <div class="aspek-skor">3.0 <span>/ 4.0</span></div>
+        </div>
+        <div class="aspek-badge badge-a">B</div>
+      </div>
+      <div class="aspek-bar"><div class="aspek-fill" data-nilai="60"></div></div>
+      <div class="aspek-komentar">"Menguasai materi dengan sangat baik dan mampu menjelaskan dengan cara yang menarik dan mudah dipahami siswa."</div>
+    </div>
+    <div class="aspek-item">
+      <div class="aspek-header">
+        <div class="aspek-icon">🎯</div>
+        <div class="aspek-info">
+          <div class="aspek-label">Perencanaan Pembelajaran</div>
+          <div class="aspek-skor">4.8 <span>/ 4.0</span></div>
+        </div>
+        <div class="aspek-badge badge-a">A</div>
+      </div>
+      <div class="aspek-bar"><div class="aspek-fill" data-nilai="96"></div></div>
+      <div class="aspek-komentar">"Modul ajar dirancang dengan runtut, tujuan pembelajaran jelas, dan aktivitas siswa sangat bervariasi."</div>
+    </div>
+    <div class="aspek-item">
+      <div class="aspek-header">
+        <div class="aspek-icon">🧑‍🤝‍🧑</div>
+        <div class="aspek-info">
+          <div class="aspek-label">Pengelolaan Kelas</div>
+          <div class="aspek-skor">4<span>/ 4.0</span></div>
+        </div>
+        <div class="aspek-badge badge-a">A</div>
+      </div>
+      <div class="aspek-bar"><div class="aspek-fill" data-nilai="94"></div></div>
+      <div class="aspek-komentar">"Mampu menciptakan suasana kelas yang kondusif, hangat, dan mendorong partisipasi aktif semua siswa."</div>
+    </div>
+    <div class="aspek-item">
+      <div class="aspek-header">
+        <div class="aspek-icon">💬</div>
+        <div class="aspek-info">
+          <div class="aspek-label">Komunikasi &amp; Interaksi</div>
+          <div class="aspek-skor">2 <span>/ 4.0</span></div>
+        </div>
+        <div class="aspek-badge badge-a">A</div>
+      </div>
+      <div class="aspek-bar"><div class="aspek-fill" data-nilai="98"></div></div>
+      <div class="aspek-komentar">"Komunikasi dengan siswa sangat baik. Pertanyaan yang diajukan mendorong berpikir kritis."</div>
+    </div>
+    <div class="aspek-item">
+      <div class="aspek-header">
+        <div class="aspek-icon">📝</div>
+        <div class="aspek-info">
+          <div class="aspek-label">Penilaian &amp; Asesmen</div>
+          <div class="aspek-skor">1 <span>/ 4.0</span></div>
+        </div>
+        <div class="aspek-badge badge-a">A</div>
+      </div>
+      <div class="aspek-bar"><div class="aspek-fill" data-nilai="94"></div></div>
+      <div class="aspek-komentar">"Instrumen penilaian yang digunakan autentik dan mencerminkan capaian pembelajaran secara holistik."</div>
+    </div>
+    <div class="aspek-item">
+      <div class="aspek-header">
+        <div class="aspek-icon">🌱</div>
+        <div class="aspek-info">
+          <div class="aspek-label">Profesionalisme &amp; Etika</div>
+          <div class="aspek-skor">4.8 <span>/ 4.0</span></div>
+        </div>
+        <div class="aspek-badge badge-a">A</div>
+      </div>
+      <div class="aspek-bar"><div class="aspek-fill" data-nilai="96"></div></div>
+      <div class="aspek-komentar">"Menunjukkan dedikasi, tanggung jawab, dan etika profesional yang luar biasa sepanjang masa penilaian."</div>
+    </div>
+  </div>
+
+  <div class="catatan-pamong fade-up">
+    <div class="catatan-header">
+      <span class="catatan-icon">💬</span>
+      <div>
+        <div class="catatan-title">Catatan Umum Guru Pamong</div>
+        <div class="catatan-sub">Mavitra Elanvihara, S.Si. · Semester Genap 2024/2025</div>
+      </div>
+    </div>
+    <p class="catatan-isi">"Secara keseluruhan, guru yang bersangkutan menunjukkan performa yang sangat memuaskan dalam seluruh aspek penilaian. Kemampuan merancang pembelajaran yang kreatif dan berpusat pada siswa menjadi kekuatan utama yang perlu terus dikembangkan."</p>
+    <div class="catatan-ttd">
+      <div class="ttd-line"></div>
+      <div class="ttd-name">Nama Guru Pamong, S.Pd., M.Pd.</div>
+      <div class="ttd-date">Yogyakarta, April 2025</div>
+    </div>
+  </div>
+
+  <div id="dokumen-nilai" class="section-anchor"></div>
+  <div class="section-divider fade-up">
+    <div class="section-icon">📄</div>
+    <div class="section-divider-text">
+      <h2>Dokumen <em>Penilaian</em></h2>
+      <p>Berkas resmi penilaian dari Guru Pamong dalam format PDF</p>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="dokumen-grid fade-up">
+    <div class="dokumen-card fade-up"
+         data-pdf="https://drive.google.com/file/d/1jSnQjARa9QeokDAv0mPthsidtUdb5RyC/preview"
+         data-title="Lembar Penilaian Kinerja Mengajar — Observasi 1">
+      <div class="dokumen-card-top">
+        <div class="dokumen-icon">📋</div>
+        <div class="dokumen-meta">
+          <span class="dok-label">Penilaian Kinerja</span>
+          <span class="dok-sub">Observasi ke-1 · Oktober 2024</span>
+        </div>
+        <div class="dok-badge">PDF</div>
+      </div>
+      <h3 class="dokumen-title">Lembar Penilaian Kinerja Mengajar — Observasi 1</h3>
+      <p class="dokumen-desc">Hasil observasi dan penilaian kinerja mengajar pertama oleh Guru Pamong. Mencakup aspek perencanaan, pelaksanaan, dan evaluasi pembelajaran.</p>
+      <div class="dokumen-footer">
+        <span class="dok-date">📅 Oktober 2024 · 8 hal.</span>
+        <div class="dok-actions">
+          <button class="btn-preview-dok" onclick="openPreview(this.closest('.dokumen-card'))">👁 Preview</button>
+          <a href="https://drive.google.com/uc?export=download&id=1jSnQjARa9QeokDAv0mPthsidtUdb5RyC" target="_blank" class="btn-download-dok">⬇ Unduh</a>
+        </div>
+      </div>
+    </div>
+    <div class="dokumen-card fade-up"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_PENILAIAN_2/preview"
+         data-title="Lembar Penilaian Kinerja Mengajar — Observasi 2">
+      <div class="dokumen-card-top">
+        <div class="dokumen-icon">📋</div>
+        <div class="dokumen-meta">
+          <span class="dok-label">Penilaian Kinerja</span>
+          <span class="dok-sub">Observasi ke-2 · Januari 2025</span>
+        </div>
+        <div class="dok-badge">PDF</div>
+      </div>
+      <h3 class="dokumen-title">Lembar Penilaian Kinerja Mengajar — Observasi 2</h3>
+      <p class="dokumen-desc">Observasi lanjutan yang menunjukkan perkembangan signifikan dalam pengelolaan kelas dan penerapan strategi pembelajaran aktif.</p>
+      <div class="dokumen-footer">
+        <span class="dok-date">📅 Januari 2025 · 8 hal.</span>
+        <div class="dok-actions">
+          <button class="btn-preview-dok" onclick="openPreview(this.closest('.dokumen-card'))">👁 Preview</button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_PENILAIAN_2" target="_blank" class="btn-download-dok">⬇ Unduh</a>
+        </div>
+      </div>
+    </div>
+    <div class="dokumen-card fade-up"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID_PENILAIAN_3/preview"
+         data-title="Rekapitulasi Nilai Akhir — Semester Genap 2024/2025">
+      <div class="dokumen-card-top">
+        <div class="dokumen-icon">📊</div>
+        <div class="dokumen-meta">
+          <span class="dok-label">Rekapitulasi Akhir</span>
+          <span class="dok-sub">Semester Genap · April 2025</span>
+        </div>
+        <div class="dok-badge">PDF</div>
+      </div>
+      <h3 class="dokumen-title">Rekapitulasi Nilai Akhir — Semester Genap 2024/2025</h3>
+      <p class="dokumen-desc">Dokumen rekap nilai akhir seluruh aspek penilaian dari Guru Pamong beserta rekomendasi pengembangan untuk periode berikutnya.</p>
+      <div class="dokumen-footer">
+        <span class="dok-date">📅 April 2025 · 12 hal.</span>
+        <div class="dok-actions">
+          <button class="btn-preview-dok" onclick="openPreview(this.closest('.dokumen-card'))">👁 Preview</button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_PENILAIAN_3" target="_blank" class="btn-download-dok">⬇ Unduh</a>
+        </div>
+      </div>
+    </div>
+    <div class="dokumen-card fade-up"
+         data-pdf="https://drive.google.com/file/d/GANTI_ID/preview"
+         data-title="Judul Dokumen">
+      <div class="dokumen-card-top">
+        <div class="dokumen-icon">📄</div>
+        <div class="dokumen-meta">
+          <span class="dok-label">Kategori Baru</span>
+          <span class="dok-sub">Periode · Tanggal</span>
+        </div>
+        <div class="dok-badge">PDF</div>
+      </div>
+      <h3 class="dokumen-title">Judul Dokumen</h3>
+      <p class="dokumen-desc">Deskripsi dokumen.</p>
+      <div class="dokumen-footer">
+        <span class="dok-date">📅 Januari 2025 · 8 hal.</span>
+        <div class="dok-actions">
+          <button class="btn-preview-dok" onclick="openPreview(this.closest('.dokumen-card'))">👁 Preview</button>
+          <a href="https://drive.google.com/uc?export=download&id=GANTI_ID" target="_blank" class="btn-download-dok">⬇ Unduh</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="jurnal" class="section-anchor"></div>
+  <div class="section-divider fade-up">
+    <div class="section-icon">📖</div>
+    <div class="section-divider-text">
+      <h2>Jurnal <em>Refleksi Harian</em></h2>
+      <p>Catatan perjalanan dan pelajaran dari pengalaman mengajar saya</p>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="jurnal-filter fade-up">
+    <span class="filter-label">Tampilkan:</span>
+    <button class="filter-btn active" data-filter="semua">Semua</button>
+    <button class="filter-btn" data-filter="insight">💡 Insight</button>
+    <button class="filter-btn" data-filter="strategi">📚 Strategi</button>
+    <button class="filter-btn" data-filter="tantangan">🔥 Tantangan</button>
+    <button class="filter-btn" data-filter="pertumbuhan">🌱 Pertumbuhan</button>
+    <button class="filter-btn" data-filter="apresiasi">❤️ Apresiasi</button>
+  </div>
+
+  <div class="jurnal-timeline fade-up">
+    <div class="jurnal-entry fade-up" data-tag="insight">
+      <div class="jurnal-tanggal-col">
+        <div class="jurnal-tanggal-box">
+          <div class="jurnal-bulan">Apr</div>
+          <div class="jurnal-tgl">10</div>
+        </div>
+        <div class="jurnal-line"></div>
+      </div>
+      <div class="jurnal-konten">
+        <span class="jurnal-entry-tag tag-insight">💡 insight</span>
+        <h3>Ketika Siswa Mengajarkan Hal Baru kepada Saya</h3>
+        <p class="jurnal-isi">Hari ini seorang siswa menunjukkan cara menyelesaikan soal pembagian yang tidak pernah saya pikirkan sebelumnya — menggunakan pola warna. Saya terpaku sejenak, lalu tersenyum.</p>
+        <div class="jurnal-takeaway">
+          <span class="takeaway-label">📌 Pelajaran Hari Ini</span>
+          <span class="takeaway-isi">Kreativitas siswa tidak terbatas — tugas guru adalah memberi ruang untuk itu berkembang.</span>
+        </div>
+        <div class="jurnal-entry-footer">
+          <span class="jurnal-mood">😊 Bahagia &amp; Terinspirasi</span>
+          <div class="jurnal-pdf-actions">
+            <button class="btn-preview-jurnal"
+              data-pdf="https://drive.google.com/file/d/GANTI_ID_JURNAL_1/preview"
+              data-title="Jurnal Refleksi — 10 Apr"
+              onclick="openJurnalPreview(this)">👁 Preview PDF</button>
+            <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_1" target="_blank" class="btn-dl-jurnal">⬇ Unduh</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jurnal-entry fade-up" data-tag="strategi">
+      <div class="jurnal-tanggal-col">
+        <div class="jurnal-tanggal-box">
+          <div class="jurnal-bulan">Apr</div>
+          <div class="jurnal-tgl">03</div>
+        </div>
+        <div class="jurnal-line"></div>
+      </div>
+      <div class="jurnal-konten">
+        <span class="jurnal-entry-tag tag-strategi">📚 strategi</span>
+        <h3>Diferensiasi Berhasil — Semua Siswa Tuntas Hari Ini</h3>
+        <p class="jurnal-isi">Hari ini saya mencoba menerapkan diferensiasi produk — siswa boleh menunjukkan pemahaman mereka melalui tulisan, gambar, atau presentasi lisan.</p>
+        <div class="jurnal-takeaway">
+          <span class="takeaway-label">📌 Pelajaran Hari Ini</span>
+          <span class="takeaway-isi">Beri pilihan, bukan perintah seragam. Setiap anak punya cara terbaik untuk menunjukkan apa yang mereka tahu.</span>
+        </div>
+        <div class="jurnal-entry-footer">
+          <span class="jurnal-mood">🎉 Bangga &amp; Bersyukur</span>
+          <div class="jurnal-pdf-actions">
+            <button class="btn-preview-jurnal"
+              data-pdf="https://drive.google.com/file/d/GANTI_ID_JURNAL_2/preview"
+              data-title="Jurnal Refleksi — 03 Apr"
+              onclick="openJurnalPreview(this)">👁 Preview PDF</button>
+            <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_2" target="_blank" class="btn-dl-jurnal">⬇ Unduh</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jurnal-entry fade-up" data-tag="tantangan">
+      <div class="jurnal-tanggal-col">
+        <div class="jurnal-tanggal-box">
+          <div class="jurnal-bulan">Mar</div>
+          <div class="jurnal-tgl">22</div>
+        </div>
+        <div class="jurnal-line"></div>
+      </div>
+      <div class="jurnal-konten">
+        <span class="jurnal-entry-tag tag-tantangan">🔥 tantangan</span>
+        <h3>Kelas Gaduh, Saya Hampir Menyerah — Tapi Tidak</h3>
+        <p class="jurnal-isi">Jujur saja, hari ini berat. Kelas sangat tidak kondusif. Beberapa siswa terus berbicara, sebagian terlihat mengantuk.</p>
+        <div class="jurnal-takeaway">
+          <span class="takeaway-label">📌 Pelajaran Hari Ini</span>
+          <span class="takeaway-isi">Hari yang berat bukan tanda kegagalan. Itu undangan untuk tumbuh lebih kuat dan lebih bijak.</span>
+        </div>
+        <div class="jurnal-entry-footer">
+          <span class="jurnal-mood">😤 Lelah tapi Bertekad</span>
+          <div class="jurnal-pdf-actions">
+            <button class="btn-preview-jurnal"
+              data-pdf="https://drive.google.com/file/d/GANTI_ID_JURNAL_3/preview"
+              data-title="Jurnal Refleksi — 22 Mar"
+              onclick="openJurnalPreview(this)">👁 Preview PDF</button>
+            <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_3" target="_blank" class="btn-dl-jurnal">⬇ Unduh</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jurnal-entry fade-up" data-tag="pertumbuhan">
+      <div class="jurnal-tanggal-col">
+        <div class="jurnal-tanggal-box">
+          <div class="jurnal-bulan">Mar</div>
+          <div class="jurnal-tgl">10</div>
+        </div>
+        <div class="jurnal-line"></div>
+      </div>
+      <div class="jurnal-konten">
+        <span class="jurnal-entry-tag tag-pertumbuhan">🌱 pertumbuhan</span>
+        <h3>Feedback Guru Pamong yang Mengubah Cara Pandang Saya</h3>
+        <p class="jurnal-isi">Setelah sesi observasi hari ini, Guru Pamong menyampaikan sesuatu yang mengena: &quot;Kamu mengajar terlalu banyak — biarkan siswa yang lebih banyak bekerja.&quot;</p>
+        <div class="jurnal-takeaway">
+          <span class="takeaway-label">📌 Pelajaran Hari Ini</span>
+          <span class="takeaway-isi">Guru yang baik bukan yang paling banyak bicara, tapi yang paling banyak memberi ruang bagi siswa untuk berpikir.</span>
+        </div>
+        <div class="jurnal-entry-footer">
+          <span class="jurnal-mood">🤔 Reflektif &amp; Berkembang</span>
+          <div class="jurnal-pdf-actions">
+            <button class="btn-preview-jurnal"
+              data-pdf="https://drive.google.com/file/d/GANTI_ID_JURNAL_4/preview"
+              data-title="Jurnal Refleksi — 10 Mar"
+              onclick="openJurnalPreview(this)">👁 Preview PDF</button>
+            <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_4" target="_blank" class="btn-dl-jurnal">⬇ Unduh</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jurnal-entry fade-up" data-tag="apresiasi">
+      <div class="jurnal-tanggal-col">
+        <div class="jurnal-tanggal-box">
+          <div class="jurnal-bulan">Feb</div>
+          <div class="jurnal-tgl">14</div>
+        </div>
+        <div class="jurnal-line"></div>
+      </div>
+      <div class="jurnal-konten">
+        <span class="jurnal-entry-tag tag-apresiasi">❤️ apresiasi</span>
+        <h3>Sepucuk Surat dari Siswa yang Membuat Saya Menangis Haru</h3>
+        <p class="jurnal-isi">Di akhir kelas hari ini, seorang siswa diam-diam menyelipkan selembar kertas di meja saya.</p>
+        <div class="jurnal-takeaway">
+          <span class="takeaway-label">📌 Pelajaran Hari Ini</span>
+          <span class="takeaway-isi">Dampak seorang guru tidak selalu terlihat hari ini — tapi ia tertanam jauh di dalam diri setiap siswa yang pernah kita ajar.</span>
+        </div>
+        <div class="jurnal-entry-footer">
+          <span class="jurnal-mood">❤️ Terharu &amp; Penuh Syukur</span>
+          <div class="jurnal-pdf-actions">
+            <button class="btn-preview-jurnal"
+              data-pdf="https://drive.google.com/file/d/GANTI_ID_JURNAL_5/preview"
+              data-title="Jurnal Refleksi — 14 Feb"
+              onclick="openJurnalPreview(this)">👁 Preview PDF</button>
+            <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_5" target="_blank" class="btn-dl-jurnal">⬇ Unduh</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jurnal-entry fade-up" data-tag="pertumbuhan">
+      <div class="jurnal-tanggal-col">
+        <div class="jurnal-tanggal-box">
+          <div class="jurnal-bulan">Jan</div>
+          <div class="jurnal-tgl">28</div>
+        </div>
+        <div class="jurnal-line"></div>
+      </div>
+      <div class="jurnal-konten">
+        <span class="jurnal-entry-tag tag-pertumbuhan">🌱 pertumbuhan</span>
+        <h3>Pertama Kali Mencoba Project-Based Learning — Hasilnya Luar Biasa</h3>
+        <p class="jurnal-isi">Ini pertama kalinya saya mencoba PBL secara penuh selama tiga minggu. Saya ragu di awal — apakah siswa SD bisa mengelola proyek sendiri?</p>
+        <div class="jurnal-takeaway">
+          <span class="takeaway-label">📌 Pelajaran Hari Ini</span>
+          <span class="takeaway-isi">Siswa seringkali lebih siap dari yang kita kira. Yang mereka butuhkan adalah kepercayaan dan bimbingan yang tepat.</span>
+        </div>
+        <div class="jurnal-entry-footer">
+          <span class="jurnal-mood">🚀 Bersemangat &amp; Percaya Diri</span>
+          <div class="jurnal-pdf-actions">
+            <button class="btn-preview-jurnal"
+              data-pdf="https://drive.google.com/file/d/GANTI_ID_JURNAL_6/preview"
+              data-title="Jurnal Refleksi — 28 Jan"
+              onclick="openJurnalPreview(this)">👁 Preview PDF</button>
+            <a href="https://drive.google.com/uc?export=download&id=GANTI_ID_JURNAL_6" target="_blank" class="btn-dl-jurnal">⬇ Unduh</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-section fade-up">
+    <a href="../index.html" class="btn-back-home">← Kembali ke Halaman Utama</a>
+    <p>Ingin melihat artefak, portofolio, atau dokumentasi kegiatan? Kunjungi halaman utama.</p>
+  </div>
+
+</main>
+
+<div id="pdf-modal" class="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <span class="modal-icon">📄</span>
+        <div>
+          <h4 id="modal-title">Preview Dokumen</h4>
+          <p id="modal-subtitle">Google Drive · PDF</p>
+        </div>
+      </div>
+      <div class="modal-header-right">
+        <a id="modal-download-btn" href="#" target="_blank" class="btn-download-dok modal-dl-btn">⬇ Unduh PDF</a>
+        <button class="modal-close" id="modal-close-btn" aria-label="Tutup">✕</button>
+      </div>
+    </div>
+    <div class="modal-body">
+      <iframe id="pdf-iframe" src="" title="Preview PDF" allowfullscreen></iframe>
+      <div class="modal-loading" id="modal-loading">
+        <div class="loading-spinner"></div>
+        <p>Memuat dokumen…</p>
+        <small>Pastikan file Google Drive sudah disetel "Siapa saja dengan link"</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 <strong>Ilham Rasyid</strong> — Penilaian &amp; Jurnal Refleksi</p>
+  <div class="footer-links">
+    <a href="../index.html">← Halaman Utama</a>
+    <a href="../artefak/artefak.html">Artefak</a>
+    <a href="../Dokumentasi/dokumentasi.html">Dokumentasi</a>
+  </div>
+</footer>
+
+
+
+
+
+<script src="../js/penilaian.js"></script>
+</body>
+</html>
